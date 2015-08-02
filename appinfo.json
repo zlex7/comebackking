@@ -7,18 +7,48 @@
         ""
     ],
     "companyName": "Pebble Technology",
-    "longName": "Simple Menu",
+    "longName": "Comeback King",
     "projectType": "native",
     "resources": {
         "media": [
             {
-                "file": "images/JOKEsmol.png",
-                "name": "Joke",
+                "file": "images/Fire5.png",
+                "name": "fire5",
                 "type": "png"
             },
             {
-                "file": "images/FIRE2smol.png",
-                "name": "fire",
+                "file": "images/Fire4.png",
+                "name": "fire4",
+                "type": "png"
+            },
+            {
+                "file": "images/Fire3.png",
+                "name": "fire3",
+                "type": "png"
+            },
+            {
+                "file": "images/FIRE2.png",
+                "name": "fire2",
+                "type": "png"
+            },
+            {
+                "file": "images/FIRE1.png",
+                "name": "fire1",
+                "type": "png"
+            },
+            {
+                "file": "fonts/AbrilFatface-Regular.ttf",
+                "name": "fatface_15",
+                "type": "font"
+            },
+            {
+                "file": "images/LOGO2smol.png",
+                "name": "Logo",
+                "type": "png"
+            },
+            {
+                "file": "images/JOKEsmol.png",
+                "name": "Joke",
                 "type": "png"
             },
             {
@@ -27,14 +57,14 @@
                 "type": "png"
             },
             {
-                "file": "fonts/AbrilFatface-Regular.ttf",
-                "name": "fatface_15",
-                "type": "font"
+                "file": "images/FIRE2smol.png",
+                "name": "fire",
+                "type": "png"
             }
         ]
     },
     "sdkVersion": "3",
-    "shortName": "Simple Menu",
+    "shortName": "Comeback King",
     "targetPlatforms": [
         "aplite",
         "basalt"

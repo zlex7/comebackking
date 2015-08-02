@@ -106,7 +106,7 @@ static void main_window_load(Window *window) {
  
   s_time_font2 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_fatface_15));
   // Create temperature Layer
-  s_weather_layer2 = text_layer_create(GRect(4, 50, 136,100 ));
+  s_weather_layer2 = text_layer_create(GRect(4, 20, 136,150 ));
    text_layer_set_font(s_weather_layer2, s_time_font2);
   text_layer_set_background_color(s_weather_layer2, GColorWhite);
   text_layer_set_text_color(s_weather_layer2, GColorBlack);
@@ -145,7 +145,7 @@ void inbox_received_callback2(DictionaryIterator *iterator, void *context) {
   // Assemble full string and display
   text_layer_set_text(s_weather_layer2, conditions_buffer);
 }
-int score=50;
+int score=48;
 void select_click_handler2(){ 
    APP_LOG(APP_LOG_LEVEL_ERROR, "click");
  int r = rand() % score;
@@ -193,6 +193,7 @@ void init3() {
 void deinit3() {
     // Destroy Window
     window_destroy(s_main_window3);
+  
 }
 
 /*int main(void) {

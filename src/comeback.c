@@ -1,4 +1,4 @@
-#include <pebble.h>
+/*#include <pebble.h>
 #include "comeback.h"
 #include "feature_simple_menu_layer.h"
 
@@ -24,7 +24,7 @@ static void main_window_load(Window *window) {
  
   s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_fatface_15));
   // Create temperature Layer
-  s_weather_layer = text_layer_create(GRect(4, 50, 136,100 ));
+  s_weather_layer = text_layer_create(GRect(4, 20, 136,160 ));
    text_layer_set_font(s_weather_layer, s_time_font);
   text_layer_set_background_color(s_weather_layer, GColorWhite);
   text_layer_set_text_color(s_weather_layer, GColorBlack);
@@ -139,7 +139,7 @@ void deinit2() {
     window_destroy(s_main_window2);
 }
 
-/*int main(void) {
+int main(void) {
   init();
   app_event_loop();
   deinit();

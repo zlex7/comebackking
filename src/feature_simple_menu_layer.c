@@ -1,8 +1,9 @@
 #include <pebble.h>
-  #include "comeback.h"
+  #include "Comeback2.h"
   #include "feature_simple_menu_layer.h"
   #include "compliment.h"
   #include "Jokes.h"
+  #include "SplashScreen.h"
 #define NUM_MENU_SECTIONS 1
 #define NUM_FIRST_MENU_ITEMS 3
 
@@ -13,7 +14,7 @@ static SimpleMenuItem s_first_menu_items[NUM_FIRST_MENU_ITEMS];
 static GBitmap *s_menu_icon_image;
 static GBitmap *icon_image2;
 static GBitmap *joke_icon;
-
+void push_main(){window_stack_push(s_main_window, true);}
 static void menu_select_callback(int index, void *ctx) {
   push_roll();
 
@@ -42,7 +43,7 @@ static void main_window_load(Window *window) {
   // an int as such to easily change the order of menu items later
   int num_a_items = 0;
   s_first_menu_items[num_a_items++] = (SimpleMenuItem) {
-    .title = "Comeback",
+    .title = "Comebacks",
     .subtitle = "Spit hot fire!",
     .callback = menu_select_callback,
     .icon=s_menu_icon_image,
@@ -79,7 +80,7 @@ void main_window_unload(Window *window) {
   gbitmap_destroy(s_menu_icon_image);
 }
 
-static void init() {
+ void init() {
   s_main_window = window_create();
   
   window_set_window_handlers(s_main_window, (WindowHandlers) {
@@ -89,19 +90,21 @@ static void init() {
   window_stack_push(s_main_window, true);
 }
 
- static void deinit() {
+ void deinit() {
   window_destroy(s_main_window);
 }
 
-int main() {
+/*int main() {
+  init5();
   init4();
 init3();
 init2();
   init();
   
   app_event_loop();
+  deinit5();
   deinit4();
   deinit3();
   deinit2();
   deinit();
-}
+}*/

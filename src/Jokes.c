@@ -45,7 +45,7 @@ char **joke = (char *[]){ "It’s hard to explain puns to kleptomaniacs because 
 
 "Did you hear about the Mexican train killer? He had locomotives.",
 
-"How does NASA organize their company parties? They planet.",
+"How does NASA organize a company party? They planet.",
 
 "Why can’t you hear a pterodactyl go to the bathroom? Because the “P” is silent.",
 
@@ -122,12 +122,12 @@ static void main_window_load(Window *window) {
  
   s_time_font3 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_fatface_15));
   // Create temperature Layer
-  s_weather_layer3 = text_layer_create(GRect(4, 50, 136,100 ));
+  s_weather_layer3 = text_layer_create(GRect(4, 20, 136,150 ));
    text_layer_set_font(s_weather_layer3, s_time_font3);
   text_layer_set_background_color(s_weather_layer3, GColorWhite);
   text_layer_set_text_color(s_weather_layer3, GColorBlack);
   text_layer_set_text_alignment(s_weather_layer3,GTextAlignmentCenter);
-  text_layer_set_text(s_weather_layer3, "Click for joke");
+  text_layer_set_text(s_weather_layer3, "Click for a joke");
   
   // Create time TextLayer
 
@@ -208,7 +208,7 @@ void init4() {
 void deinit4() {
     // Destroy Window
     window_destroy(s_main_window4);
-}
+APP_LOG(APP_LOG_LEVEL_ERROR, "click");}
 /*
 int main(void) {
   init3();
