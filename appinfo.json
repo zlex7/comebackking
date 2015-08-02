@@ -1,0 +1,47 @@
+{
+    "appKeys": {
+        "KEY_comeback": 0,
+        "KEY_compliments": 1
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Pebble Technology",
+    "longName": "Simple Menu",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/JOKEsmol.png",
+                "name": "Joke",
+                "type": "png"
+            },
+            {
+                "file": "images/FIRE2smol.png",
+                "name": "fire",
+                "type": "png"
+            },
+            {
+                "file": "images/HEAR2smol.png",
+                "name": "heart",
+                "type": "png"
+            },
+            {
+                "file": "fonts/AbrilFatface-Regular.ttf",
+                "name": "fatface_15",
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Simple Menu",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "69a53987-379e-4ae7-a3c2-d08e5ffe8511",
+    "versionLabel": "2.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
